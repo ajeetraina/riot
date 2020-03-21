@@ -46,6 +46,14 @@ Run the following command to install completion:
 $ source <(riot generate-completion)
 ---- 
 
+=== Using Docker 
+
+```
+docker run ajeetraina/riot
+```
+
+
+
 == Documentation
 
 https://redislabs-solution-architects.github.io/riot/index.html[RIOT Documentation]
