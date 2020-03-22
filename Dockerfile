@@ -15,4 +15,4 @@ RUN wget https://github.com/Redislabs-Solution-Architects/riot/releases/download
    && unzip riot-1.10.1.zip
 ENV RIOT_HOME="/riot-1.10.1/"
 ENV PATH=$PATH:${RIOT_HOME}/bin
-CMD  ["/bin/sh", "/opt/replicate.sh]
+CMD  ["/bin/sh", "/opt/replicate.sh"]
