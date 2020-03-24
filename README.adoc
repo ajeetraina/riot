@@ -57,3 +57,34 @@ docker run ajeetraina/riot
 == Documentation
 
 https://redislabs-solution-architects.github.io/riot/index.html[RIOT Documentation]
+
+== Relevant Command for ElastiCache ===
+
+
+## Listing out all databases
+
+```
+> info keyspace
+```
+
+## Listing out all keys
+
+
+```
+$redis-cli -h <endpoint> -p 
+> KEYS *
+```
+
+## Flushing all keys
+
+Please ensure that you are not running the below command in clustered mode. Under clustered mode on EC, select command is not supported. Also, if you get error "READONLY" while using flushall, it means you are running it on slave node.
+
+```
+select 1
+flushall
+```
+
+
+
+
+
